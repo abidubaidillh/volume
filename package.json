@@ -1,0 +1,38 @@
+{
+  "name": "volume-book-reviews",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:backend": "node scripts/test-backend.js",
+    "test:auth": "node scripts/test-auth.js",
+    "test:google-books": "node scripts/test-google-books-api.js",
+    "test:403-fix": "node scripts/test-403-fix.js",
+    "check:server": "node scripts/check-server.js",
+    "debug:auth": "node scripts/debug-auth.js",
+    "db:migrate": "echo 'Run the SQL files in supabase/migrations/ in your Supabase dashboard'",
+    "health": "curl -f http://localhost:3000/api/health || echo 'Server not running'"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "@supabase/supabase-js": "^2.38.4",
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "lucide-react": "^0.294.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
+}
